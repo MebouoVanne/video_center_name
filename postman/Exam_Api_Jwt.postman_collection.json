@@ -1,0 +1,1023 @@
+{
+	"info": {
+		"_postman_id": "860f2851-018e-40a7-b640-1f2253c55363",
+		"name": "Exam_Api_Jwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29528236"
+	},
+	"item": [
+		{
+			"name": "create user 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"idUser1\",pm.response.json().id);\r",
+							"pm.environment.set(\"user1\",pm.response.json().userIdentifier);\r",
+							"\r",
+							"pm.test(\"create user1\",function(){\r",
+							"    pm.response.to.have.status(201);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"mebouovane@gmail.com\",\r\n  \"password\": \"$2y$13$HeEC1epSjClc5eXJBUpCneY9WBFsBYMfGDggOg9g4eU5WaJoq2nSK\",\r\n  \"firstname\": \"mebouo\",\r\n  \"lastname\": \"mebouo\",\r\n  \"isVerified\": true\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}api/users",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"idUser2\",pm.response.json().id);\r",
+							"pm.environment.set(\"user2\",pm.response.json().userIdentifier);\r",
+							"\r",
+							"pm.test(\"create user2\",function(){\r",
+							"    pm.response.to.have.status(201);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"lina@gmail.com\",\r\n  \"password\": \"$2y$13$HeEC1epSjClc5eXJBUpCneY9WBFsBYMfGDggOg9g4eU5WaJoq2nSK\",\r\n  \"firstname\": \"lina\",\r\n  \"lastname\": \"lina\",\r\n  \"isVerified\": true\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}api/users",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"idUser3\",pm.response.json().id);\r",
+							"pm.environment.set(\"user3\",pm.response.json().userIdentifier);\r",
+							"\r",
+							"pm.test(\"create user3\",function(){\r",
+							"    pm.response.to.have.status(201);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"jason@gmail.com\",\r\n  \"password\": \"$2y$13$HeEC1epSjClc5eXJBUpCneY9WBFsBYMfGDggOg9g4eU5WaJoq2nSK\",\r\n  \"firstname\": \"jason\",\r\n  \"lastname\": \"jason\",\r\n  \"isVerified\": true\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}api/users",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user 4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"idUser4\",pm.response.json().id);\r",
+							"pm.environment.set(\"user4\",pm.response.json().userIdentifier);\r",
+							"\r",
+							"pm.test(\"create user4\",function(){\r",
+							"    pm.response.to.have.status(201);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"leon@gmail.com\",\r\n  \"password\": \"$2y$13$HeEC1epSjClc5eXJBUpCneY9WBFsBYMfGDggOg9g4eU5WaJoq2nSK\",\r\n  \"firstname\": \"leonaard\",\r\n  \"lastname\": \"leo\",\r\n  \"isVerified\": true\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}api/users",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create admin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"idAdmin\",pm.response.json().id);\r",
+							"pm.environment.set(\"admin\",pm.response.json().userIdentifier);\r",
+							"\r",
+							"pm.test(\"create admin\",function(){\r",
+							"    pm.response.to.have.status(201);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"lui@gmail.com\",\r\n    \"roles\": [\r\n    \"ROLE_ADMIN\"\r\n  ],\r\n  \"password\": \"$2y$13$HeEC1epSjClc5eXJBUpCneY9WBFsBYMfGDggOg9g4eU5WaJoq2nSK\",\r\n  \"firstname\": \"louis\",\r\n  \"lastname\": \"louis\",\r\n  \"isVerified\": true\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}api/users",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login with user 4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"tokenuser4\",pm.response.json().token);\r",
+							"\r",
+							"pm.test(\"login with user 4\",function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{tokenUsers4}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"{{user4}}\",\r\n  \"password\": \"1234567\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}api/login_check",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"login_check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "try list of users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"list of users\",function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token1}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}api/users",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "try delete user4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"idUser4\",null);\r",
+							"\r",
+							"pm.test(\"Delete user4\",function(){\r",
+							"    pm.response.to.have.status(204);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{tokenuser4}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}api/users/{{idUser4}}",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"users",
+						"{{idUser4}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login with user 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"token1\",pm.response.json().token);\r",
+							"\r",
+							"pm.test(\"login with user 1\",function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"{{user1}}\",\r\n  \"password\": \"1234567\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}api/login_check",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"login_check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create video 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"idVideo1\",pm.response.json().id);\r",
+							"\r",
+							"pm.test(\"create video1\",function(){\r",
+							"    pm.response.to.have.status(201);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token1}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"voici le video 1\",\r\n  \"videoLink\": \"https://www.youtube.com/embed/k9ZA8BoNFik?si=M3SdZPISEilxKQae\",\r\n  \"description\": \"voici la video numero 1 creer pendant le test de symfony portant sur les api\",\r\n  \"user\": \"/api/users/{{idUser1}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}api/videos",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"videos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create video 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"idVideo2\",pm.response.json().id);\r",
+							"\r",
+							"pm.test(\"create video2\",function(){\r",
+							"    pm.response.to.have.status(201);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token1}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"voici le video 2\",\r\n  \"videoLink\": \"https://www.youtube.com/embed/k9ZA8BoNFik?si=M3SdZPISEilxKQae\",\r\n  \"description\": \"voici la video numero 2 creer pendant le test de symfony portant sur les api\",\r\n  \"user\": \"/api/users/{{idUser2}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}api/videos",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"videos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create video 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"idVideo3\",pm.response.json().id);\r",
+							"\r",
+							"pm.test(\"create video3\",function(){\r",
+							"    pm.response.to.have.status(201);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token1}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"voici le video 3\",\r\n  \"videoLink\": \"https://www.youtube.com/embed/k9ZA8BoNFik?si=M3SdZPISEilxKQae\",\r\n  \"description\": \"voici la video numero 3 creer pendant le test de symfony portant sur les api\",\r\n  \"user\": \"/api/users/{{idUser3}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}api/videos",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"videos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list of videos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"list of all videos\",function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}api/videos",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"videos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "watch video 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"watch video 2\",function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}api/videos/{{idUser2}}",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"videos",
+						"{{idUser2}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update video 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"modif video 1\",function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token1}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"titre 1 \",\r\n  \"videoLink\": \"https://www.youtube.com/embed/k9ZA8BoNFik?si=M3SdZPISEilxKQae\",\r\n  \"description\": \"voici la video numero 1 creer pendant le test de symfony portant sur les api\",\r\n  \"user\": \"/api/users/{{idUser1}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}api/videos/{{idUser1}}",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"videos",
+						"{{idUser1}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete video 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"idVideo3\",null);\r",
+							"\r",
+							"pm.test(\"Delete video 3\",function(){\r",
+							"    pm.response.to.have.status(204);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token1}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}api/videos/{{idUser3}}",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"videos",
+						"{{idUser3}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bonus update user3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"update user 3\",function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{tokenAdmin}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstname\": \"gaston\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}api/users/{{idUser3}}",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"users",
+						"{{idUser3}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login with admin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"tokenAdmin\",pm.response.json().token);\r",
+							"\r",
+							"pm.test(\"login with admin\",function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"{{admin}}\",\r\n  \"password\": \"1234567\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}api/login_check",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"login_check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bonus update user4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"idUser4\",pm.response.json().id);\r",
+							"pm.environment.set(\"user4\",pm.response.json().userIdentifier);\r",
+							"pm.test(\"update user 4\",function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{tokenAdmin}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"leoon@gmail.com\",\r\n  \"password\": \"$2y$13$HeEC1epSjClc5eXJBUpCneY9WBFsBYMfGDggOg9g4eU5WaJoq2nSK\",\r\n  \"firstname\": \"leonaard\",\r\n  \"lastname\": \"leo\",\r\n  \"isVerified\": true\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}api/users/{{idUser4}}",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"users",
+						"{{idUser4}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "watch user 4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"watch user 4\",function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{tokenAdmin}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}api/users/{{idUser4}}",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"users",
+						"{{idUser4}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user 1 with path",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Update user 1 with path\",function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{tokenAdmin}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/merge-patch+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"mebouovane@gmail.com\",\r\n  \"password\": \"$2y$13$HeEC1epSjClc5eXJBUpCneY9WBFsBYMfGDggOg9g4eU5WaJoq2nSK\",\r\n  \"firstname\": \"mebouovan\",\r\n  \"lastname\": \"mebouo\",\r\n    \"friendWith\": [\r\n    \"/api/users/{{idUser1}}\",\"/api/users/{{idUser3}}\",\"/api/users/{{idAdmin}}\"\r\n  ],\r\n  \"isVerified\": true\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}api/users/{{idUser1}}",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"users",
+						"{{idUser1}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"idUser2\",null);\r",
+							"\r",
+							"pm.test(\"Delete user2\",function(){\r",
+							"    pm.response.to.have.status(204);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{tokenAdmin}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}api/users/{{idUser2}}",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"users",
+						"{{idUser2}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list of video",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}api/videos",
+					"host": [
+						"{{url}}api"
+					],
+					"path": [
+						"videos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
